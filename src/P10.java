@@ -60,11 +60,12 @@ public class P10 {
 //		}
 //		
 //문5:
-//	        *     
+//	          *     
 //           ***    
 //          *****   
 //         *******  
 //        ********* 
+//1)
 //		for(int i = 0 ; i < 5 ; i++) {
 //			for(int j = 0 ; j < 10 ; j++) {
 //				if((i+j>=4)&&(j-i<=4)) {
@@ -74,6 +75,19 @@ public class P10 {
 //				}
 //			}
 //			System.out.println();
+//		}
+//2)		
+//		for(int i = 0 ;i < 5; i++) {
+//			for(int j = 0; j < 4-i ; j++) {
+//				System.out.print(" ");
+//			}
+//			for(int k = 0; k <= i ; k++) {
+//				System.out.print("*");
+//			}
+//			for(int j = 0; j < i ; j++) {
+//				System.out.print("*");
+//			}
+//		System.out.println();	
 //		}
 //문6:
 //		********* 
@@ -124,17 +138,32 @@ public class P10 {
 
 		
 //조건 4개!, for 2
-		for(int i = 1; i < 10 ; i++) {
-			for(int j = 1 ; j < 10 ; j++) {	
-				if((i + j >= 6)&&(j-i <= 4)&&(i-j <= 4)&&(i+j <= 14)) {
-					System.out.print("*");
-				}else {
-					System.out.print(" ");
-				}
-			}
-			System.out.println();
+//1)
+//		for(int i = 1; i < 10 ; i++) {
+//			for(int j = 1 ; j < 10 ; j++) {	
+//				if((i + j >= 6)&&(j-i <= 4)&&(i-j <= 4)&&(i+j <= 14)) {
+//					System.out.print("*");
+//				}else {
+//					System.out.print(" ");
+//				}
+//			}
+//			System.out.println();
+//		
+//		}
+//2)		
+//		for(int i = 0; i < 9 ; i++) {
+//			for(int j = 0 ; j < 9 ; j++) {	
+//				if((j < 4-i)||(j < i-4)||(j > 4+i)||(j >= 13-i)) {
+//					System.out.print(" ");
+//				}else {
+//					System.out.print("*");
+//				}
+//			}
+//			System.out.println();
+//		
+//		}
 		
-		}
+		
 
 	}
 
