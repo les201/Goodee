@@ -5,7 +5,7 @@ public class P15 {
 		int[] arr = {28, 19, 87, 66 ,45, 6, 79, 30, 96, 33};
 		int a;
 		int b=0; //위치 값
-		int min=57;
+		int min=57; 
 	
 		for(int i = 0 ;i < arr.length ; i++ ) {
 			a = arr[i]-57;	
@@ -32,18 +32,20 @@ public class P15 {
 		}
 		System.out.println("개수 : "+count+"  합 : "+ sum);
 		
-//문3: 54321초가 몇시간 몇분 몇초인가?
-		int h,m,s;
-		int tt=54321;
+//문3: x초가 며칠, 몇 시간, 몇 분, 몇 초인가?
+		int d,h,m,s;
+		int tt=654321;
 		
 		m = tt / 60;
 		s = tt % m;
+		
 		h = m / 60;
 		m = m - 60*h;
-
 		
-		System.out.println(h+"시간 "+m+ "분 "+s+"초");
-
+		d = h / 24;
+		h = h - d*24;
+		
+		System.out.println(d+"일 "+h+"시간 "+m+ "분 "+s+"초");
 	}
 }
 
