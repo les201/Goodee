@@ -3,6 +3,7 @@ public class Test13 {
 
 	public static void main(String[] args) {
 		String s = "Hello World!!";
+
 		
 		//한 줄 주석
 		/*
@@ -11,6 +12,7 @@ public class Test13 {
 		/**
 		 * 정보주석
 		 */
+		
 		//Hello World! -> 문자열은 0부터 시작
 		//0123456789101112
 		//substring(값1): 값1이상부터 자른다
