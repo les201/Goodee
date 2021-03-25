@@ -46,6 +46,24 @@ public class P15 {
 		h = h - d*24;
 		
 		System.out.println(d+"일 "+h+"시간 "+m+ "분 "+s+"초");
+		
+		
+//문3-2
+		String res = "";
+		int val = 54321;
+		if(val / 3600 > 0) {
+			res += val / 3600 + "시간";
+			val %= 3600;
+		}
+		if(val / 60 > 0) {
+			res += val / 60 + "분";
+			val %= 60;
+		}
+		if(val > 0) {
+			res += val + "초";
+		}
+		System.out.println(res);
+		
 	}
 }
 
