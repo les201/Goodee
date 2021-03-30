@@ -112,6 +112,24 @@ public class TestController2 {//list, map
 			//next() : 다음 값을 가져온다.
 			System.out.println(map.get(keys.next()));
 		}
+		
+		List<HashMap<String, String>> board
+		 = new ArrayList<HashMap<String, String>>();
+		
+		for(int i =10 ; i > 0 ; i--) {
+			HashMap<String, String> data = new HashMap<String, String>();
+			
+			data.put("no", Integer.toString(i));
+			data.put("title", "Test"+ (i));
+			data.put("writer", "Tester");
+			
+			board.add(data);
+		}
+		
+		for(HashMap<String, String> data : board) {
+			System.out.println(data.get("no")+ "\t" +data.get("title")+ "\t" + data.get("writer"));
+		}
+		
 	}
 
 }
